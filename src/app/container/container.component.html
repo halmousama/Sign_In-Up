@@ -1,0 +1,14 @@
+<div class="containerOfComponents vh-100 w-100">
+  <div class="foregroundComponents">
+      <app-sign-in></app-sign-in>
+  </div>
+  <div class="backgroundSlider vh-100 w-100">
+    <div class="carousel slide " data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div *ngFor="let image of bgImagesPath; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+          <img class="d-block w-100 vh-100" [src]="image" [alt]="i+ ' slide'">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

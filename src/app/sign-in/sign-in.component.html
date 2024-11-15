@@ -1,0 +1,6 @@
+<div class="signInContainer">
+  <h1 class="signInTitle">Sign {{animationStep === 'signUpFinal' ? 'Up' : 'In'}}</h1>
+  <div (click)="startAnimations()" id="signUpIcon" [ngClass]="animationStep"><i id="plusIcon" class="fa-solid fa-plus"></i></div>
+  <app-sign-in-form *ngIf="animationStep !== 'signUpFinal'"></app-sign-in-form>
+  <app-sign-up-form *ngIf="animationStep === 'signUpFinal'"></app-sign-up-form>
+</div>

@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+.containerOfComponents {
+  position: relative;
+}
+.foregroundComponents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: #00000075;
+} 

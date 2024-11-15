@@ -1,0 +1,27 @@
+<div *ngIf="waitingSignUp" style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background-color: rgba(169, 169, 169, 0.648);">
+  <div class="spinner-border text-primary"
+    style="width: 100px; height: 100px;position: absolute;top: calc(50% - 50px);left: calc(50% - 50px);"
+    role="status"></div>
+    <p style="position: absolute;top: 60%;left: 0%;font-size: 30px; text-align: center;width: 100%;">{{waitingSignUpMsg}}</p>
+</div>
+<form method="post">
+  <input (keydown)="isKeyEnter($event, usernameInput)" (input)="checkEmail()" class="form-control form-control-lg"
+    [ngClass]="email === '' ? '' : isEmailValid ? 'is-valid' : 'is-invalid'" [(ngModel)]="email" type="email"
+    name="email" id="email" placeholder="Email">
+  <div class="valid-feedback">{{emailValidMsg}}</div>
+  <div class="invalid-feedback">{{emailInvalidMsg}}</div>
+
+  <input (keydown)="isKeyEnter($event, passwordInput)" (input)="checkUsername()" class="form-control form-control-lg"
+    [ngClass]="username === '' ? '' : isUsernameValid ? 'is-valid' : 'is-invalid'" [(ngModel)]="username" type="text"
+    name="username" id="username" #usernameInput placeholder="Username">
+  <div class="valid-feedback">{{usernameValidMsg}}</div>
+  <div class="invalid-feedback">{{usernameInvalidMsg}}</div>
+
+  <input (keydown)="isKeyEnterForGo($event)" (input)="checkPswd()" class="form-control form-control-lg"
+    [ngClass]="password === '' ? '' : isPasswordValid ? 'is-valid' : 'is-invalid'" [(ngModel)]="password"
+    type="password" name="password" id="password" #passwordInput placeholder="Password">
+  <div class="valid-feedback"> {{pswdValidMsg}} </div>
+  <div class="invalid-feedback">{{pswdInvalidMsg}}</div>
+
+  <div (click)="goSignUp()" class="btn btn-danger">Sign Up</div>
+</form>

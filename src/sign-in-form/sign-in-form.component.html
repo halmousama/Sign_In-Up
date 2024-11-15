@@ -1,0 +1,47 @@
+<form method="post" class="signInForm d-flex flex-column ">
+  <p class="h5"><span *ngIf="recoveryEmailSent" class="badge bg-light text-info">We have sent you an email to reset your
+      password</span></p>
+  <div class="signInInputs" *ngIf="!forgetPassword">
+    <input (keydown)="isKeyEnterForUsername($event, passwordInput)" (input)="checkUsername()" [(ngModel)]="username"
+      [ngClass]="isUsernameValid ? 'is-valid' :isUsernameValid === null ? '' : 'is-invalid'"
+      class="form-control form-control-lg" type="text" name="username" id="username" placeholder="Username">
+    <div class="valid-feedback">{{usernameValidMsg}}</div>
+    <div class="invalid-feedback">{{usernameInvalidMsg}}</div>
+
+    <div class="passwordInputAndEye form-control">
+      <input #passwordInput (keydown)="isKeyEnterForPswd($event)" (input)="isPswdEmpty()" [(ngModel)]="password"
+        [ngClass]="isPasswordValid ? 'is-valid' :isPasswordValid === null ? '' : 'is-invalid'"
+        class="form-control form-control-lg" [type]="pswdVisibility ? 'text' : 'password'" name="password" id="password"
+        placeholder="Password">
+      <i class="fa-solid fa-eye" (click)="pswdVisibility=!pswdVisibility"
+        [style]="{'color': pswdVisibility ? 'orangered' : 'blue'}"></i>
+    </div>
+    <input type="text" hidden class="form-control" [ngClass]="isPasswordValid ? 'is-valid' :isPasswordValid === null ? '' : 'is-invalid'">
+    <div class="valid-feedback">
+      {{passwordValidMsg}}
+      <span *ngIf="isPasswordValid" style="width: 25px; height: 25px;" class="spinner-border text-primary"
+        role="status">
+      </span>
+    </div>
+    <div class="invalid-feedback">{{passwordInvalidMsg}}</div>
+  </div>
+
+  <div class="forgetPasswordInputs" *ngIf="forgetPassword">
+    <input (keydown)="isKeyEnterForUsernameOrEmail($event)" (input)="checkUsernameOrEmail()"
+      [(ngModel)]="usernameOrEmail"
+      [ngClass]="isUsernameOrEmailValid ? 'is-valid' :isUsernameOrEmailValid === null ? '' : 'is-invalid'"
+      class="form-control form-control-lg" type="text" name="usernameOrEmail" id="usernameOrEmail"
+      placeholder="Username or Email">
+    <div class="valid-feedback">
+      {{usernameOrEmailValidMsg}}
+      <div *ngIf="isUsernameOrEmailValid" style="width: 25px; height: 25px;" class="spinner-border text-primary"
+        role="status"></div>
+    </div>
+    <div class="invalid-feedback">{{usernameOrEmailInvalidMsg}}</div>
+  </div>
+
+  <div (click)="onGo()" class="btn btn-danger">GO</div>
+
+  <span class="forgetPassword badge bg-transparent text-primary text-decoration-underline"
+    (click)="forgetPassword = !forgetPassword">{{forgetPassword ? 'Back to Sign In' : 'Forget your Password?'}}</span>
+</form>

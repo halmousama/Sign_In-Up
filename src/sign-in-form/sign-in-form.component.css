@@ -1,0 +1,38 @@
+form input,
+form .btn {
+  width: 90%;
+  height: 40px;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+form * {
+  margin: auto;
+}
+.forgetPassword {
+  cursor: pointer;
+}
+
+.signInInputs, .forgetPasswordInputs {
+  width: 100%;
+}
+.signInInputs div, .forgetPasswordInputs div {
+  width: 88%;
+  margin: 5px auto;
+}
+.passwordInputAndEye {
+  position: relative;
+  padding: 0;
+  background-color: white;
+}
+.passwordInputAndEye input , .passwordInputAndEye div {
+  margin: 5px 0px;
+}
+i.fa-eye {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 15px;
+}
