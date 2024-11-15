@@ -78,10 +78,10 @@ Include some screenshots or GIFs of your page in action (showing the background 
     <td><img src="public/assets/screenshots/up1.png" alt="Sign Up Page 2" width="300"></td>
   </tr>
 </table>
+
 <hr/>
-<video width="600" height="400" autoplay loop muted>
-  <source src="public/assets/screenshots/v.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/c4160e92-ea20-43e3-a070-2f4359816caf
 
 ## Customization
 
@@ -92,6 +92,7 @@ The page has a dynamic background with beautiful images. To change the backgroun
 ### Animations
 
 The page includes smooth animations for transitions. You can modify or add new animations in the `styles.css` file.
+
 
 ## Test Users
 
