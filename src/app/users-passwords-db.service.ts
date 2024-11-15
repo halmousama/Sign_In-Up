@@ -19,9 +19,15 @@ export class UsersPasswordsDBService {
     },
     {
       id: 3,
-      email: 'user2@gmail.com',
-      username: 'user2',
-      password: 'user2',
+      email: 'guest@gmail.com',
+      username: 'guest',
+      password: 'guest',
+    },
+    {
+      id: 4,
+      email: 'test@gmail.com',
+      username: 'test',
+      password: 'test',
     }
   ]
   constructor() { }
