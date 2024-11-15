@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { UsersPasswordsDBService } from '../app/users-passwords-db.service';
+import { UsersPasswordsDBService } from '../users-passwords-db.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({

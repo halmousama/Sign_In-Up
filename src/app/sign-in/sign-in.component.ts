@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SignInFormComponent } from '../../sign-in-form/sign-in-form.component';
+import { SignInFormComponent } from '../sign-in-form/sign-in-form.component';
 import { CommonModule } from '@angular/common';
 import { SignUpFormComponent } from '../sign-up-form/sign-up-form.component';
 
