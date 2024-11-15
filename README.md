@@ -100,21 +100,37 @@ To test the sign-in and sign-up functionality, you can use the following pre-def
 
 You can use these accounts to test the authentication process on the page:
 
-- **Admin account**
-  - Username: `admin`
-  - Password: `admin`
-  
-- **User account**
-  - Username: `user`
-  - Password: `user`
-  
-- **Guest account**
-  - Username: `guest`
-  - Password: `guest`
-  
-- **Test account**
-  - Username: `test`
-  - Password: `test`
+<table>
+  <tr>
+    <td>ID</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Username</td>
+    <td>admin</td>
+    <td>user</td>
+    <td>guest</td>
+    <td>test</td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td>admin</td>
+    <td>user</td>
+    <td>guest</td>
+    <td>test</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>admin@gmail.com</td>
+    <td>user@gmail.com</td>
+    <td>guest@gmail.com</td>
+    <td>test@gmail.com</td>
+  </tr>
+</table>
+
 
 ## Contributing
 
