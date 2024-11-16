@@ -67,8 +67,7 @@ To run the application locally:
 
 ## Screenshots
 
-Include some screenshots or GIFs of your page in action (showing the background change and animation effects).
-<table>
+<table style='width:100%;'>
   <tr>
     <td><img src="public/assets/screenshots/in1.png" alt="Sign In Page 1" width="300"></td>
     <td><img src="public/assets/screenshots/in2.png" alt="Sign In Page 2" width="300"></td>
@@ -87,7 +86,7 @@ https://github.com/user-attachments/assets/c4160e92-ea20-43e3-a070-2f4359816caf
 
 ### Background Images
 
-The page has a dynamic background with beautiful images. To change the background images, replace the image files in the `assets/images` directory.
+The page has a dynamic background with beautiful images. To change the background images, replace the image files in the `public/assets/images` directory.
 
 ### Animations
 
@@ -100,7 +99,7 @@ To test the sign-in and sign-up functionality, you can use the following pre-def
 
 You can use these accounts to test the authentication process on the page:
 
-<table>
+<table style='width:100%;'>
   <tr>
     <td>ID</td>
     <td>1</td>
@@ -166,4 +165,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - **Angular** - The framework used for building the project.
 - **Bootstrap** - Provides responsive design and layout components.
 - **FontAwesome** - Used for adding stylish icons.
-- **All contributors** - Thanks to everyone who has contributed to this project.
