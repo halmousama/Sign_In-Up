@@ -1,14 +1,29 @@
 <div class="containerOfComponents vh-100 w-100">
   <div class="foregroundComponents">
-      <app-sign-in></app-sign-in>
+    <div class="pageContent">
+      <router-outlet></router-outlet>
+    </div>
+    <nav>
+      <h1>Logo</h1>
+      <ul>
+        <li><a class="badge" routerLink="/home">Home</a></li>
+        <li><a class="badge" routerLink="/sign-in">Sign In</a></li>
+        <li><a class="badge" routerLink="/sign-up">Sign Up</a></li>
+      </ul>
+    </nav>
   </div>
   <div class="backgroundSlider vh-100 w-100">
-    <div class="carousel slide " data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
+    <div
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+      data-bs-pause="false"
+    >
       <div class="carousel-inner">
-        <div *ngFor="let image of bgImagesPath; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+        <!-- <div *ngFor="let image of bgImagesPath; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
           <img class="d-block w-100 vh-100" [src]="image" [alt]="i+ ' slide'">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-</div> 
+</div>

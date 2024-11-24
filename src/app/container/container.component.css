@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -8,11 +8,59 @@
 .containerOfComponents {
   position: relative;
 }
+
 .foregroundComponents {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  /* background-color: #ff000075; */
+}
+.foregroundComponents nav {
+  /* position: absolute; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  background-color: #00000075;
-} 
+  transform: translate(-50%, 0);
+  z-index: 5;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  background-color: #000000;
+}
+
+.foregroundComponents nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.foregroundComponents nav ul li {
+  padding: 0;
+}
+.foregroundComponents nav ul li a {
+  padding: 10px;
+  height: 40px;
+  min-width: 100px;
+  text-decoration: none;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.pageContent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

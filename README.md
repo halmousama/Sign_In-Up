@@ -34,13 +34,13 @@ A stylish and animated sign-in/sign-up page built with Angular, featuring dynami
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/halmousama/Sign_In-Up.git
+    git clone https://github.com/halmousama/Sign_In-Up.git SignInUp
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Sign_In-Up
+    cd SignInUp
     ```
 
 3. Install the dependencies:

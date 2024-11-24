@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { SignInComponent } from '../sign-in/sign-in.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-container',
   standalone: true,
-  imports: [CommonModule, SignInComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css',
 })
