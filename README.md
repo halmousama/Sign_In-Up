@@ -61,27 +61,19 @@ To run the application locally:
 
 2. Open your browser and navigate to:
 
+
     ```
     http://localhost:4200
     ```
 
 ## Screenshots
 
-<table style='width:100%;'>
-  <tr>
-    <td><img src="public/assets/screenshots/in1.png" alt="Sign In Page 1" width="300"></td>
-    <td><img src="public/assets/screenshots/in2.png" alt="Sign In Page 2" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="public/assets/screenshots/up1.png" alt="Sign Up Page 1" width="300"></td>
-    <td><img src="public/assets/screenshots/up1.png" alt="Sign Up Page 2" width="300"></td>
-  </tr>
-</table>
+Sign In
+![Screenshot from 2024-11-24 22-20-55](https://github.com/user-attachments/assets/24fe12da-2392-4e6e-924c-3d445d3cbb6a)
 
-<hr/>
-
-https://github.com/user-attachments/assets/c4160e92-ea20-43e3-a070-2f4359816caf
-
+Sign Up
+![Screenshot from 2024-11-24 22-20-42](https://github.com/user-attachments/assets/b51f3290-3594-4418-969a-6fbde94685b9)
+    
 ## Customization
 
 ### Background Images
